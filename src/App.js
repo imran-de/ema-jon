@@ -5,6 +5,7 @@ import Shop from './component/Shop/Shop';
 import NotFound from './component/NotFound/NotFound';
 import OrderReview from './component/OrderReview/OrderReview';
 import Inventory from './component/Inventory/Inventory';
+import PlaceOrder from './component/PlaceOrder/PlaceOrder';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           <Route path="/Inventory">
             <Inventory></Inventory>
           </Route>
+          <Route path='/place-order'>
+            <PlaceOrder></PlaceOrder>
+          </Route>
           <Route path='*'>
             <NotFound></NotFound>
           </Route>
@@ -34,3 +38,7 @@ function App() {
 }
 
 export default App;
+
+
+// Google it and then go to the reactjs.org link. And then also google what is side effect. Learn it)
+
