@@ -15,12 +15,13 @@ const OrderReview = () => {
         setCart(newCart)
         removeFromDb(key)
     }
-    const handlePlaceOrder = () => {
-        history.push('/place-order');
+    const handleProccedToShipping = () => {
+        history.push('/shipping');
         //set the cart function in ui
-        setCart([]);
+        // setCart([]);
         //than update the fakedb storage
-        clearTheCart();
+        // clearTheCart();
+
 
     }
     return (
@@ -33,7 +34,7 @@ const OrderReview = () => {
                 </div>
                 <div className="cart-summary">
                     <Cart cart={cart}>
-                        <button onClick={handlePlaceOrder} className="btn-cart">Place Order</button>
+                        <button onClick={handleProccedToShipping} className="btn-cart">Proceed to Shipping</button>
                     </Cart>
                 </div>
             </div>
